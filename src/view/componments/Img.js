@@ -4,7 +4,7 @@
  * @Author: 任瀚汶 
  * @Date: 2020-12-21 15:35:22 
  * @Last Modified by: 任瀚汶
- * @Last Modified time: 2020-12-22 15:01:30
+ * @Last Modified time: 2020-12-22 16:08:00
 */
 import logo from './logo.svg';
 import React from 'react';
@@ -25,16 +25,16 @@ class Img extends React.Component {
   render() {
     return (
       <div>
-        <div style={{cursor:'pointer'}}>
+        <div onClick={this.openAlert}>
           {
             this.state.imgState
-            ? <img src={logo} className="App-logo" alt="logo" />
-            : <img src={logo} className="App-logo2" alt="logo" />
+            ? <img src={logo} className="Home-logo" alt="logo" />
+            : <img src={logo} className="Home-logo2" alt="logo" />
           }   
         </div>
-        <button id="aks123" onClick={this.openAlert}>
-          {this.state.imgState ? '逆时针' : '顺时针' }
-        </button>
+        <h4 style={{cursor:'pointer'}}>
+          点击开始学习React
+        </h4>
       </div>
       
     )

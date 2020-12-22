@@ -1,6 +1,6 @@
 function Welcome(props) {
   let inf = <div>
-    <h3>Hello, {props.name}: {props.sex === '1' ? '男' : '女'}</h3>
+    <h1>Hello, {props.name}</h1>
   </div>
   return inf;
 }
